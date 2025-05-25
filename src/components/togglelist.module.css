@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #ffffff; /* Light background */
+  border-radius: 12px;
+  border:1px solid #000000;
+  box-shadow: #000000 1px 1px 5px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: white;
+  border-radius: 0px;
+  border-bottom: 1px solid #000000; /* Border between items */
+}
+
+.item:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  text-align: left; /* Align label text to the left */
+  flex-grow: 1; /* Ensure the label takes available space */
+  margin-right: 80px;
+}
+
+
+
+
+.switch span {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 20px;
+
+}
+

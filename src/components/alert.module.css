@@ -1,0 +1,173 @@
+/* src/components/FireAlert.module.css */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background-color: #f5e1e3;
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width:450px;
+    height: 240px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    bottom: 10%;
+  }
+ 
+  .modal.temperature {
+    background-color: #f5e1e3;
+
+  }
+  
+  .temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e94f50; 
+    margin-right: 20px;
+  }
+  
+  /* Màu sắc cho thông báo về độ ẩm */
+  .modal.humidity {
+    background-color: #a2d9f7; 
+  }
+  
+  .modal.humidity .temperature {
+    color: #1e90ff; 
+  }
+
+  .modal.light {
+    background-color: #ffeb99;
+  }
+  .modal.light .temperature {
+    color: #ff8c00; 
+  }
+  .modal.airpollution {
+    background-color: #564d3d;  /* Màu vàng cho ô nhiễm không khí */
+  }
+  
+  .modal.airpollution .temperature {
+    color: #e39b6b; /* Màu cam đậm cho giá trị ô nhiễm */
+  }
+  
+  .message {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    margin-left: 20px; 
+    flex: 1; 
+  }
+  .messageWrapper {
+    
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 320px; 
+    text-align: left;
+    color: #333;
+    background-color: rgba(255, 255, 255, 1); 
+  }
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    width: 30px;
+    z-index: 2; 
+  }
+  
+  .fireBackground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('/d:/DADN/FRONTEND/front-end/src/assets/firepng.png'); 
+    background-size: cover;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .modal.humidity .fireBackground {
+    background-image: url('../assets/water.png');
+  }
+
+  .modal .fireBackground {
+    opacity: 0.6; 
+  }
+  .modal.light .fireBackground {
+    background-image: url('../assets/sunshine.png'); 
+  }
+  .modal.airpollution .fireBackground {
+    background-image: url('../assets/air.png'); /* Hình ảnh cảnh báo ô nhiễm */
+  }
+  .tempButton {
+    display: block;
+    margin: 20px auto 0 auto;  /* 20px top, auto sides, 0 bottom */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #479be5;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tempButton:hover {
+    background-color: #3a7bd5;
+  }
+  .modal {
+    /* existing styles … */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* maintain your width, height, padding, border-radius, etc. */
+  }
+  
+  .modalContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2; /* ensure content is above the fire background */
+  }
+  
+  .tempButton {
+    display: block;
+    margin: auto;             /* horizontally center the button */
+    margin-top: auto;         /* push the button to the bottom */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b31b4e;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 5;
+    margin-top: 10px;
+  }
+  
+  .tempButton:hover {
+    background-color: #9a2744;
+  }

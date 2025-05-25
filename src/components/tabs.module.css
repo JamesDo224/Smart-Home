@@ -1,0 +1,40 @@
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    padding: 5px 10px;
+    background: white;
+    width: fit-content;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+
+  }
+  
+  .tab {
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0px 0px;
+    transition: all 0.3s ease;
+    user-select: none; /* Ngăn chặn chọn text */
+     /* Đảm bảo tab nằm trên cùng */
+  }
+  
+  .selected {
+    color: rgb(0, 0, 0);
+  }
+  
+  .unselected {
+    color: rgb(187, 187, 187);
+  }
+  
+  /* Tạo thanh ngăn cách */
+  .separator {
+    width: 1px;
+    height: 16px;
+    background-color: gray;
+    margin: 0 10px;
+  }
+  

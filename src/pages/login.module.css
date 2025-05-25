@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0px 32px;
+    width: 95vw;
+    background-color: #C5E3FF;
+}
+
+.imageContainer {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: contents;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeImage {
+    max-width: 100vh;
+    height: auto;
+}
+
+.bgSlide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    /* khởi đầu không thấy */
+    height: 100%;
+    background-color: #4368b561;
+    transition: width 1s ease-out;
+    z-index: 0;
+    /* nằm dưới ảnh và form */
+}
+
+.reveal .bgSlide {
+    width: 49%;
+}
+
+.userIcon {
+    width: 100px;
+}
+
+.formContainer {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(158, 211, 253, 255);
+    padding: 30px;
+    margin-right: 100px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer form {
+    display: block;
+    justify-items: center;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.loginInput::placeholder {
+    color: rgba(2, 27, 102, 0.42);
+    /* hoặc #aaa, #ccc tuỳ nền */
+    opacity: 1;
+    /* đảm bảo trình duyệt hiện màu bạn đặt */
+}
+
+.labelInput {
+    font-size: 14px;
+    color: #333;
+}
+
+.loginInput {
+    width: 280px;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 1px solid #333333;
+    background: #deeefd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.errorMsg {
+    color: #f35050;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.submitButton {
+    width: fit-content;
+    padding: 10px;
+    background-color: #2969b3;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s;
+}
+
+.submitButton:hover {
+    background-color: #172f7a;
+}

@@ -1,0 +1,159 @@
+.timerPage {
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #C5E3FF; /* Light blue background */
+}
+
+.mainContent {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+ 
+    margin-left: 70px;
+    background-color: #C5E3FF; /* Alice blue background */
+}
+
+.timerSection {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.leftSection {
+    width: 35%;
+    height: 100%;
+  
+}
+
+.timeslot {
+  zoom: 1.2; /* Alternative scaling using zoom */
+  transform-origin: top
+}
+
+.rightSection {
+  width: calc(65% - 40px);
+  height: 100%;
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.toggleList {
+  width: 70%; /* Adjust this percentage as needed */
+}
+.timeslotListHeader {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+  font-size: 40px;
+}
+.tabWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  zoom: 1.5; /* Alternative way to increase the size of the tabWrapper */
+  transform-origin: left top;
+ 
+
+
+}
+
+.labelText {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+}
+
+.tabs {
+  flex: 1;
+  font-size: 16px;
+  z-index: 0;
+}
+.tabs :global(.ant-tabs-tab) {
+  padding: 12px 24px;
+  margin: 0 16px;
+  z-index: 0;
+}
+.rightSection > :first-child {
+    margin-top: 20px;
+}
+
+.rightSection > :nth-child(3) {
+  margin-top: 30px;
+}
+.confirmButtonWrapper {
+  margin-top: 20px; /* Space above the button */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.confirmButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #6bb3ff;
+  color: #040404;
+  border: solid 1px #000000;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.confirmButton:hover {
+  background-color: #2890ff;
+}
+@media (max-width: 1385px) {
+  .timerSection {
+    flex-direction: column;
+  }
+
+  .leftSection,
+  .rightSection {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Media query cho màn hình nhỏ (iPhone SE) */
+@media (max-width: 375px) {
+  .timerSection {
+      flex-direction: column; /* Chuyển từ layout ngang sang dọc */
+  }
+
+  .leftSection,
+  .rightSection {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .timeslot {
+      transform: scale(1); /* Điều chỉnh lại tỷ lệ cho vừa với màn hình nhỏ */
+  }
+
+  .timeslotListHeader {
+      font-size: 28px; /* Giảm kích thước header */
+  }
+
+  .tabWrapper {
+      margin-left: 0;
+      transform: scale(1); /* Bỏ scale tab */
+  }
+
+  .labelText {
+      font-size: 18px; /* Giảm kích thước font chữ */
+  }
+
+  .confirmButton {
+      font-size: 14px; /* Giảm kích thước font chữ của nút */
+      padding: 8px 16px; /* Giảm kích thước padding */
+  }
+}
