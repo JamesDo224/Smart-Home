@@ -7,7 +7,7 @@ It integrates advanced technologies to **monitor, control, and automate home dev
 ---
 
 ## 👥 Team Size
-- **5 members** (including 1 Computer Engineering)
+- **5 members** (including 1 Computer Engineering and 4 Computer Science)
 ---
 
 ## 🔑 Key Features
