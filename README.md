@@ -45,5 +45,9 @@ It integrates advanced technologies to **monitor, control, and automate home dev
 
 ---
 
-📚 **Note:** This SmartHome system combines **embedded programming**, **hardware integration**, and **real-time control** with a user-friendly interface, ensuring high stability and convenience.
+## 📚 DEMO Video:
+- [https://www.youtube.com/watch?v=bAcqqMjGhZQ&feature=youtu.be]( https://www.youtube.com/watch?v=bAcqqMjGhZQ&feature=youtu.be)
+## 📚 Report:
+- [https://drive.google.com/file/d/1jM7m_6d8uwrntODedU_V0tdR-9mQqN2-/view?usp=sharing](https://drive.google.com/file/d/1jM7m_6d8uwrntODedU_V0tdR-9mQqN2-/view?usp=sharing)
+
 
