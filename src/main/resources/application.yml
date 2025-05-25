@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: IoT System
+  websocket:
+    enabled: true
+  datasource:
+    url:  jdbc:postgresql://pg-31e904f8-hcmut-aeab.h.aivencloud.com:15424/Smarthome?sslmode=require #jdbc:mysql://localhost:3306/iot
+    username: avnadmin
+    password: AVNS_sEk120fxC-9u9AspH2E
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: ${PORT:8080}
+
+adafruit:
+  username: Anhdo020204
+  base-url: https://io.adafruit.com/api/v2/Anhdo020204/feeds
+  api-key: aio_BXhj736qyMLQDGfjvL09czjE0G9R
+  receive-interval: 60000
