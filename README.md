@@ -8,26 +8,6 @@ It integrates advanced technologies to **monitor, control, and automate home dev
 
 ## 👥 Team Size
 - **5 members** (including 1 Computer Engineering)
-
----
-
-## 📌 Contribution
-### 🔷 Team Lead
-- Specified the system, gathered user requirements, and identified system modules.
-- Defined functions of each module.
-- Coordinated task allocation, timeline management, and provided technical guidance to meet project milestones.
-
-### 🔷 Hardware Programming & Device Integration
-- **Embedded Programming:** Developed embedded code to manage and connect sensors, actuators, displays, and communication modules.
-- **Component Integration:** Assembled and configured hardware modules (sensors, motors, LEDs, LCDs) into a cohesive system.
-- **Testing & Debugging:** Conducted system tests, identified and debugged integration issues for stable operation.
-
----
-
-## 💻 Technologies Used
-- Programming **Python** with **Blockly**.
-- Embedded systems with **ESP32**-based **Yolo-bit** platform.
-
 ---
 
 ## 🔑 Key Features
